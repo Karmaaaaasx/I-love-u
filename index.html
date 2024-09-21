@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart with MxT</title>
+    <style>
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(-45deg);
+            margin: 50px auto;
+        }
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+        .text {
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        .love-message {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="heart">
+    <div class="text">MxT</div>
+</div>
+<div class="love-message">I love you</div>
+
+</body>
+</html>
